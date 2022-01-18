@@ -16,4 +16,6 @@ wget --no-check-certificate https://dlcdn.apache.org/maven/maven-3/3.8.4/binarie
 ../apache-maven-3.8.4/bin/mvn clean package -DskipTests
 
 wget https://github.com/dtstack/maven-repository/raw/master/com/pingcap/ticdc/cdc/ticdc-decoder/5.2.0-SNAPSHOT/ticdc-decoder-5.2.0-SNAPSHOT.jar
+
+git clone git@github.com:dtstack/maven-repository
 ```

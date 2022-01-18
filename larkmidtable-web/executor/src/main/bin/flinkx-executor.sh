@@ -2,7 +2,7 @@
 #
 
 FRIEND_NAME=FLINKX-EXEXUTOR
-MAIN_CLASS=com.larkmidtable.executor.FlinkXExecutorApplication
+MAIN_CLASS=com.larkmidtable.executor.ExecutorApplication
 if [ ! ${ENV_FILE} ]; then
     ENV_FILE="env.properties"
 fi

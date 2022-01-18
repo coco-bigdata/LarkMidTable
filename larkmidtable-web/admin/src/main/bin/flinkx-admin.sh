@@ -2,7 +2,7 @@
 #
 
 FRIEND_NAME=FLINKX-ADMIN
-MAIN_CLASS=com.larkmidtable.admin.AdminApplication
+MAIN_CLASS=com.larkmidtable.admin.FlinkxAdminApplication
 if [ ! ${ENV_FILE} ]; then
     ENV_FILE="env.properties"
 fi

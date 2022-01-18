@@ -1,4 +1,5 @@
 ```shell
+cd larkmidtable-web/
 mvn package
 mvn clean install
 
@@ -7,6 +8,11 @@ wget --no-check-certificate http://www.datanucleus.org/downloads/maven2/oracle/o
 mvn install:install-file -Dfile=ojdbc6-11.2.0.3.jar -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0.3 -Dpackaging=jar
 
 mvn install:install-file -Dfile=sqljdbc4.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc4 -Dversion=4.0 -Dpackaging=jar
+
+cd build/
+tar -zxvf web-2.1.2.tar.gz
+cd web-2.1.2
+./bin/install.sh
 
 cd docker
 

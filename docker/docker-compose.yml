@@ -1,0 +1,39 @@
+version: '3'
+services:
+  sgcc-mysql80:
+    image: mysql:8.0
+    container_name: sgcc-mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - sgcc-network
+    command:
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_unicode_ci
+      --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./db/conf.d:/etc/mysql/conf.d
+      - ./db/data:/var/lib/mysql
+      - ./db/init-sql:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+  sgcc:
+    build:
+      context: sgcc-fe
+      dockerfile: Dockerfile
+    container_name: sgcc-fe
+    ports:
+      - "8080:8080"
+    networks:
+      - sgcc-network
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - /home/sgcc/data:/home/sgcc/data
+    depends_on:
+      - sgcc-mysql80
+    restart: always
+
+networks:
+  sgcc-network:
+    external: true

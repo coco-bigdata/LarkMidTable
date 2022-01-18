@@ -24,6 +24,9 @@ sudo docker-compose up -d sgcc
 sudo docker-compose stop sgcc
 sudo docker-compose rm sgcc
 
+mysql -h127.0.0.1 -uroot -p
+root
+
 sudo docker network create --subnet=172.20.0.0/16 sgcc-network
 ```
 

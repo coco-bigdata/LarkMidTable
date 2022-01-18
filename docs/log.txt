@@ -1,0 +1,11 @@
+mvn package
+[ERROR] Failed to execute goal on project admin: Could not resolve dependencies for project com.guoliang.cn:admin:jar:2.1.2: The following artifacts could not be resolved: com.oracle:ojdbc6:jar:11.2.0.3, com.microsoft.sqlserver:sqljdbc4:jar:4.0: Failure to find com.oracle:ojdbc6:jar:11.2.0.3 in https://repo.maven.apache.org/maven2 was cached in the local repository, resolution will not be reattempted until the update interval of central has elapsed or updates are forced -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException
+[ERROR]
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :admin

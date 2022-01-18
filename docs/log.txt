@@ -20,3 +20,15 @@ mvn package
 [ERROR]
 [ERROR] After correcting the problems, you can resume the build with the command
 [ERROR]   mvn <goals> -rf :admin
+
+flinkx
+[ERROR] Failed to execute goal com.diffplug.spotless:spotless-maven-plugin:2.4.2:check (spotless-check) on project flinkx-parent: The plugin com.diffplug.spotless:spotless-maven-plugin:2.4.2 requires Maven version 3.1.0 -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginIncompatibleException
+
+[WARNING] The POM for com.pingcap.ticdc.cdc:ticdc-decoder:jar:5.2.0-SNAPSHOT is missing, no dependency information available
+Downloading from dtstack-github: https://github.com/dtstack/maven-repository/raw/master/com/pingcap/ticdc/cdc/ticdc-decoder/5.2.0-SNAPSHOT/ticdc-decoder-5.2.0-SNAPSHOT.jar

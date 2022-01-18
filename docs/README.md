@@ -10,6 +10,12 @@ mvn install:install-file -Dfile=sqljdbc4.jar -DgroupId=com.microsoft.sqlserver -
 ```
 
 ```shell
+sudo useradd sgcc
+sudo chmod 777 /home/sgcc/
+cp -r flinkx1.12/ /home/sgcc/
+```
+
+```shell
 git clone git@github.com:DTStack/flinkx.git
 wget --no-check-certificate https://dlcdn.apache.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.tar.gz
 
@@ -20,4 +26,8 @@ wget https://github.com/dtstack/maven-repository/raw/master/com/pingcap/ticdc/cd
 git clone git@github.com:dtstack/maven-repository
 
 mvn install:install-file -Dfile=ticdc-decoder-5.2.0-SNAPSHOT.jar -DgroupId=com.pingcap.ticdc.cdc -DartifactId=ticdc-decoder -Dversion=5.2.0-SNAPSHOT -Dpackaging=jar
+```
+
+```
+https://github.com/DTStack/flinkx/blob/master/docs/quickstart.md
 ```

@@ -53,3 +53,16 @@ Exception in thread "main" java.lang.NullPointerException
         at com.dtstack.flinkx.client.Launcher.findDefaultFlinkxDistDir(Launcher.java:190)
         at com.dtstack.flinkx.client.Launcher.findDefaultConfigDir(Launcher.java:130)
         at com.dtstack.flinkx.client.Launcher.main(Launcher.java:66)
+
+
+./bin/start-all.sh
+flinkx-admin starting ...
+2022-01-18 18:56:13.733 [INFO] (14933) load environment variables
+2022-01-18 18:56:14.267 [INFO] (14933) java
+2022-01-18 18:56:14.270 [INFO] (14933) Waiting FLINKX-ADMIN to start complete ...
+2022-01-18 18:56:14.458 [INFO] (14933) FLINKX-ADMIN start success
+flinkx-executor starting ...
+2022-01-18 18:56:14.471 [INFO] (15216) load environment variables
+2022-01-18 18:56:14.868 [INFO] (15216) java
+2022-01-18 18:56:14.871 [INFO] (15216) Waiting FLINKX-EXEXUTOR to start complete ...
+2022-01-18 18:56:15.048 [INFO] (15216) FLINKX-EXEXUTOR start success

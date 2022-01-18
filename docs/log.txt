@@ -66,3 +66,8 @@ flinkx-executor starting ...
 2022-01-18 18:56:14.868 [INFO] (15216) java
 2022-01-18 18:56:14.871 [INFO] (15216) Waiting FLINKX-EXEXUTOR to start complete ...
 2022-01-18 18:56:15.048 [INFO] (15216) FLINKX-EXEXUTOR start success
+
+tail -f packages/admin/bin/console.out
+Error: Could not find or load main class com.larkmidtable.admin.AdminApplication
+
+2022-01-18 19:02:19.213 [INFO] (28005) FLINKX-ADMIN start success

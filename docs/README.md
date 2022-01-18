@@ -13,6 +13,8 @@ cd build/
 tar -zxvf web-2.1.2.tar.gz
 cd web-2.1.2
 ./bin/install.sh
+./packages/admin/bin/flinkx-admin.sh start
+tail -f packages/admin/bin/console.out
 
 cd docker
 

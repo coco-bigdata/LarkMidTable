@@ -255,7 +255,7 @@
             selectDataSource(datasource) {
                 if (datasource === 'mysql') {
                     this.temp.jdbcUrl = 'jdbc:mysql://{host}:{port}/{database}'
-                    this.temp.jdbcDriverClass = 'com.mysql.jdbc.Driver'
+                    this.temp.jdbcDriverClass = 'com.mysql.cj.jdbc.Driver'
                 } else if (datasource === 'hana') {
                     this.temp.jdbcUrl = 'jdbc:sap://{host}:{port}/{instanceNumber}'
                     this.temp.jdbcDriverClass = 'com.sap.db.jdbc.Driver'

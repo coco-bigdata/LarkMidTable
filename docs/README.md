@@ -26,6 +26,13 @@ sudo docker-compose rm sgcc
 
 mysql -h127.0.0.1 -uroot -p
 root
+create database flinkx_web default character set utf8mb4 collate utf8mb4_unicode_ci;
+use flinkx_web;
+create user 'flinkx_web'@'127.0.0.1' identified by 'flinkx_web123456';
+grant all privileges on flinkx_web.* to 'flinkx_web'@'127.0.0.1';
+flush privileges;
+
+mysql -h127.0.0.1 -uroot -p flinkx_web < larkmidtable-web/bin/db/flinkx_web.sql
 
 sudo docker network create --subnet=172.20.0.0/16 sgcc-network
 ```

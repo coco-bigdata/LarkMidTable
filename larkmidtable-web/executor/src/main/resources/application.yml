@@ -7,7 +7,7 @@ server:
 logging:
   config: classpath:logback.xml
 #  path: ${data.path}/applogs/executor/jobhandler
-  path: /home/hadoop/data/flinkx-web-2.1.2/packages/flinkx-executor
+  path: /home/sgcc/data/flinkx-web-2.1.2/packages/flinkx-executor
 
 flinkx:
   job:
@@ -21,7 +21,7 @@ flinkx:
       port: 9999
 #      port: ${executor.port:9999}
       ### job log path
-      logpath: /home/hadoop/data/flinkx-web-2.1.2/packages/flinkx-executor/
+      logpath: /home/sgcc/data/flinkx-web-2.1.2/packages/flinkx-executor/
 #      logpath: ${data.path}/applogs/executor/jobhandler
       ### job log retention days
       logretentiondays: 30
@@ -29,9 +29,9 @@ flinkx:
     accessToken:
 
   executor:
-    jsonpath: /home/hadoop/flinkx-1.8_release/job/
+    jsonpath: /home/sgcc/flinkx1.12/job/
 #    jsonpath: ${json.path}
 
   shell:
-    path: /home/hadoop/flinkx-1.8_release/start.sh
+    path: /home/sgcc/flinkx1.12/start.sh
 #  pypath: ${python.path}

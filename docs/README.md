@@ -12,7 +12,9 @@ mvn install:install-file -Dfile=sqljdbc4.jar -DgroupId=com.microsoft.sqlserver -
 ```shell
 sudo useradd sgcc
 sudo chmod 777 /home/sgcc/
-cp -r flinkx1.12/ /home/sgcc/
+mkdir /home/sgcc/data
+sudo chmod -R 777 /home/sgcc/
+cp -r flinkx1.12/ /home/sgcc/data
 ```
 
 ```shell

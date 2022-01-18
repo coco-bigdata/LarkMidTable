@@ -18,4 +18,6 @@ wget --no-check-certificate https://dlcdn.apache.org/maven/maven-3/3.8.4/binarie
 wget https://github.com/dtstack/maven-repository/raw/master/com/pingcap/ticdc/cdc/ticdc-decoder/5.2.0-SNAPSHOT/ticdc-decoder-5.2.0-SNAPSHOT.jar
 
 git clone git@github.com:dtstack/maven-repository
+
+mvn install:install-file -Dfile=ticdc-decoder-5.2.0-SNAPSHOT.jar -DgroupId=com.pingcap.ticdc.cdc -DartifactId=ticdc-decoder -Dversion=5.2.0-SNAPSHOT -Dpackaging=jar
 ```

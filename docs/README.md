@@ -8,6 +8,8 @@ mvn install:install-file -Dfile=ojdbc6-11.2.0.3.jar -DgroupId=com.oracle -Dartif
 
 mvn install:install-file -Dfile=sqljdbc4.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc4 -Dversion=4.0 -Dpackaging=jar
 
+cd docker
+
 sudo docker-compose build
 sudo docker-compose down
 sudo docker-compose up
@@ -21,6 +23,8 @@ sudo docker-compose up sgcc
 sudo docker-compose up -d sgcc
 sudo docker-compose stop sgcc
 sudo docker-compose rm sgcc
+
+sudo docker network create --subnet=172.20.0.0/16 sgcc-network
 ```
 
 ```shell

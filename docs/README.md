@@ -7,6 +7,20 @@ wget --no-check-certificate http://www.datanucleus.org/downloads/maven2/oracle/o
 mvn install:install-file -Dfile=ojdbc6-11.2.0.3.jar -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0.3 -Dpackaging=jar
 
 mvn install:install-file -Dfile=sqljdbc4.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc4 -Dversion=4.0 -Dpackaging=jar
+
+sudo docker-compose build
+sudo docker-compose down
+sudo docker-compose up
+sudo docker-compose up -d
+
+sudo docker-compose up sgcc-mysql80
+sudo docker-compose up -d sgcc-mysql80
+sudo docker-compose stop sgcc-mysql80
+
+sudo docker-compose up sgcc
+sudo docker-compose up -d sgcc
+sudo docker-compose stop sgcc
+sudo docker-compose rm sgcc
 ```
 
 ```shell
